@@ -10,7 +10,7 @@ const DetailsReferences = props => {
             <ol>
             {props.references.map((item,index) => {
                 return(<li className='my-2' key={index}>
-                    <a className='text-reset' href={item.url} target='_blank'><i>{item.text} <FiExternalLink /></i></a>
+                    <a className='text-reset' href={item.url} target='_blank' rel="noreferrer"><i>{item.text} <FiExternalLink /></i></a>
                 </li>)
             })}
             </ol>
