@@ -1,0 +1,80 @@
+.footer{
+    bottom: 0;
+    width: 100%;
+    /*background-color: rgba(116, 9, 9, 1);*/
+    background-color: #301014;
+}
+
+.description, .contact,.footerlinks li button, .footerlinks li a{
+    color: #CCAD8F;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.description{
+  min-width: 200px;
+}
+
+.about{
+  max-width: 600px;
+}
+
+.about p{
+  text-align: justify;
+}
+
+.contact{
+    max-width: fit-content;
+}
+
+.contact h6{
+    margin-left: .75rem;
+}
+
+.about{
+  margin-inline: 1rem;
+}
+
+.footerlinks
+{
+  padding-left:0;
+  list-style:none
+}
+
+.copyright
+{
+  border-top: #CCAD8F 1px solid;
+  text-align: center;
+  color:#CCAD8F ;
+  /*background-color: rgba(67, 6, 6, 1);*/
+  background-color: #301014;
+}
+
+.footerlinks a, .footerlinks button{
+  border-color: transparent;
+}
+
+.btnNone{
+    cursor: initial!important;
+    pointer-events: none;
+}
+
+.btnNone:hover{
+    background-color: transparent!important;
+    border-color: transparent!important;
+    color: #262626!important;
+}
+
+.about h5, .contact h5{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about p, .contact ul, .copyright{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (max-width:600px)
+{
+  .aboutContact{
+    flex-direction: column;
+  }
+}

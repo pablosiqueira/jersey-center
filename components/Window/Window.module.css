@@ -1,0 +1,16 @@
+.window{
+    max-width: 1200px;
+    display: block;
+    margin-inline: auto;
+    margin-block: 30px;
+    color: white;
+    /*background: #1E1E1E;*/
+    background: #21201D;
+    border-radius: 25px;
+}
+
+@media only screen and (min-height: 600px) {
+    .window{
+        min-height: 500px;
+    }
+}

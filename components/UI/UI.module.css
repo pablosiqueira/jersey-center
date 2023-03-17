@@ -1,0 +1,12 @@
+.modalBack div div{
+    background-color: #1E1E1E;
+    color: white;
+    border-color: #D3C4E3;
+    border-width: 2px;
+}
+
+.modalBack div div div button{
+
+    background-color: white;
+    /*border-width: 5px;*/
+}

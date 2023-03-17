@@ -1,0 +1,53 @@
+.crest{
+    max-width: 100px;
+}
+
+.logo{
+    max-height: 30px;
+}
+
+.logo, .crest{
+    cursor: pointer;
+}
+
+.card{
+    height: 300px;
+}
+
+.video, .detailsImg{
+    max-height: 500px;
+}
+
+.references{
+    max-width: calc(1000px - 1rem);
+    color: white;
+}
+
+.detailsImg{
+    max-width: 1000px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+    object-position: top;
+}
+
+.detailsBlock{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.trophy img{
+    height: 75px;
+}
+
+.carouselSize{
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+    .carouselSize{
+        max-height: 200px;
+    }
+    .trophy img{
+        height: 55px;
+    }
+}

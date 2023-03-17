@@ -1,0 +1,82 @@
+
+.fontWhite{
+    color: #E2DADB;
+}
+
+.customCheck .form-check-input:checked{
+    background-color: #301014;
+}
+
+.lightBtn{
+    color: #301014;
+    background-color: #CCAD8F;
+    border: none;
+}
+
+.borderLight{
+    border-color: #CCAD8F!important;
+}
+
+.lightBtn:hover, .darkBtn:hover{
+    background-color: #FFC07F;
+    color: #301014;
+    border-color: transparent;
+}
+
+.darkBtn{
+    background-color: #301014;
+    color: #CCAD8F;
+    border-color: #CCAD8F;
+}
+
+.imgPreview{
+    max-width: 500px;
+}
+
+.formStyle{
+    max-width: 500px;
+    color: black;
+}
+
+.formDetails{
+    max-width: 700px;
+    color: black;
+}
+
+.formStyle select, .formStyle input{
+    background-color: #E2DADB;
+    color: #301014;
+}
+
+.selectBasic:disabled, .lightBtn:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.imgDiv{
+    width: 100%;
+    height: 500px;
+}
+
+.textAreaHeight{
+    height: calc(3.5rem + 2px); 
+    line-height: 1.25;
+}
+
+.detailsImg{
+    /*width: 100%;*/
+    max-width: 1000px;
+    max-height: 500px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+    object-position: top;
+}
+
+.detailsBlock{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.video{
+    max-height: 500px;
+}

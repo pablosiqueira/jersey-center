@@ -1,0 +1,121 @@
+.backRed span{
+    background-color: #301014!important;
+    color: #E2DADB!important;
+    border-color: #E2DADB!important;
+}
+
+.textDark a{
+    color: #301014!important;
+    background-color: #E2DADB;
+    border-color: white!important;
+}
+
+.actionsSection{
+    background-color: #CCAD8F;
+    justify-content: space-around;
+}
+
+.actionLink{
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: .5rem;
+}
+
+.actionLink:hover{
+    color: #A30018;
+}
+
+.checkList{
+    max-height: 150px;
+    overflow: auto;
+}
+
+.selectedItem{
+    background-color: #E2DADB;
+    color: black;
+    text-transform: capitalize;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.selectedItem a{
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.cover{
+    /*background: url('https://pbs.twimg.com/media/FA8SUETWEAMrRob?format=jpg&name=large');*/
+    border-radius: 25px 25px 0 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 0 20px #000;
+    /*height: 150px;*/
+}
+
+.cover h5{
+    font-weight: 600;
+}
+
+.coverInside{
+    padding-top: 75px;
+    /*height: 300px;*/
+}
+
+.coverInside img, .cover img{
+    max-height: 100px;
+    /*height: 150px;*/
+    object-fit: scale-down;
+    /*background-color: #1E1E1E;*/
+}
+
+.listBtn{
+    background-color: #E2DADB;
+    color: black;
+}
+
+.filterOffCanvas{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.filterOffCanvas button, .accordBody{
+    background-color: #1E1E1E;
+    color: #E2DADB;
+    border-color: #E2DADB;
+}
+
+.btnOff{
+    border: none;
+}
+
+.btnOff:hover{
+    color: aliceblue;
+    scale: 1.4;
+}
+
+.filterOffCanvas button::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+@media only screen and (min-width: 1000px) {
+    .filters{
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .filters{
+        flex-direction: column;
+    }
+}
+
+
+

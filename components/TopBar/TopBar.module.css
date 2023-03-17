@@ -1,0 +1,81 @@
+.topbar, .ctgbar{
+    color: #D3C4E3;
+}
+
+.topbar{
+    /*background-color: rgba(116, 9, 9, 1);*/
+    background-color: #301014;
+    color:#CCAD8F;
+}
+
+.topbar button, .topbar span{
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color:#CCAD8F;
+}
+
+.topbar button:hover, .topbar span:hover{
+    cursor: pointer;
+    color:#FFC07F;
+    text-decoration: none;
+}
+
+.topbar a{
+  /*color:#CCAD8F;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+  .ctglink, .ctglink a{
+    color: #CCAD8F;
+    text-decoration: none;
+    background-color: transparent!important;
+    text-transform: uppercase;
+  }
+
+  .ctglink:focus-visible{
+    outline: none;
+  }
+
+  .ctglink:hover, .ctglink a:hover, .ctglink a:focus{
+    color: #FFC07F!important;
+  }
+
+  /*.ctglink a:hover, .ctglink a:focus, .ctglink a:active{
+    color: #FFC07F!important;
+  }*/
+
+  .actionsSection{
+    background-color: #D3C4E3;
+    justify-content: space-evenly;
+}
+
+.actionLink{
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: .5rem;
+}
+
+.actionLink:hover{
+    color: #9E0059;
+}
+
+.fontRoboto, .actionsSection{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.bottomDiv{
+  width: 100%;
+  background-color: #D3C4E3;
+}
+
+.bottomDiv img{
+  max-height: 200px;
+  object-fit: scale-down;
+  max-width: 100%;
+}

@@ -1,0 +1,121 @@
+.card{
+    padding: 1rem;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    text-shadow: 0 0 20px #000;
+    transition: .6s ease;
+}
+
+.card:hover{
+    background-size: 150%!important;
+    
+}
+
+.card:hover .cardContent{
+    color: #CCAD8F;
+}
+
+
+.smallCard{
+    background: transparent;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.smallCard:hover{
+    border-color: #CCAD8F;
+}
+
+.smallCard:hover h5{
+    color: #CCAD8F;
+}
+
+.smallCard img{
+    height: 80px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card{
+        /*width: 275px;*/
+        min-height: 200px;
+    }
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.viewBtn{
+    width: fit-content;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+}
+
+.viewAllBtn{
+    background-color: #301014;
+    border: 3px solid #CCAD8F;
+    border-radius: 6px;
+    color: #CCAD8F;
+    font-size: large;
+    width: 100%;
+  }
+  
+  .viewAllBtn:hover{
+    background-color: #CCAD8F;
+    color: #301014;
+    border-color: #301014;
+  }
+
+.gridDiv{
+    max-width: 1000px;
+}
+
+.cardLink{
+    cursor: pointer;
+}
+
+  .divTitle{
+    background-image: url('/manutd.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    width: fit-content;
+    color: black;
+    width: auto;
+  }
+
+  .divTitle h1{
+    font-family: 'Anton', sans-serif;
+    font-size: xxx-large;
+  }
+
+  .cardImg{
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .cardDiv{
+    min-height: 150px;
+    cursor: pointer;
+  }
+
+  .editLinks div{
+    background-color: #CCAD8F;
+    color: #301014;
+    border-color: #301014;
+  }
+
+  .editLinks div:hover{
+    background-color: #301014;
+    color: #CCAD8F;
+    cursor: pointer;
+  }
+
