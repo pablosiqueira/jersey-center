@@ -3,18 +3,23 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import classes from './List.module.css'
 import Container from 'react-bootstrap/Container';
+import { useEffect } from 'react';
 
 const ListPagination = props => {
     const router = useRouter()
     
     const perPage = (props.perPage !== undefined) ? +props.perPage : 20
 
-    const [active, setActive] = useState(()=>{
+    const getPage = () => {
         if(!router.query.page){
             return 1
         }else{
             return router.query.page
         }
+    }
+
+    const [active, setActive] = useState(()=>{
+        getPage()
     })
 
     let items = [];
@@ -36,13 +41,18 @@ const ListPagination = props => {
         lastLimit = props.total
     }*/
 
+    useEffect(()=>{
+        let thisPage = getPage()
+        setActive(thisPage)
+    },[router])
+
 
     for (let number = 1; number <= numOfPages; number++) {
     items.push(  
     <Pagination.Item className={
         ((+number === +active || (+number < +active + 5 && +number > +active) || (number+5 > numOfPages)) ? 
         ' ' : 'd-none ') + (+number === +active ? classes.backRed : classes.textDark )}
-        key={number} active={number === active} onClick={() => changePage(number)}>
+        key={number} active={+number === +active} onClick={() => changePage(number)}>
       {number}
     </Pagination.Item>,
     );

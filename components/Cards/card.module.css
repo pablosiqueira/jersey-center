@@ -4,11 +4,13 @@
     border-radius: 10px;
     border: none;
     text-shadow: 0 0 20px #000;
-    transition: .6s ease;
+    transition: .2s ease;
 }
 
 .card:hover{
-    background-size: 150%!important;
+    /*background-size: 150%!important;*/
+    filter: contrast(110%);
+    border: 2.5px solid #CCAD8F;
     
 }
 

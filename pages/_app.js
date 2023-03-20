@@ -8,12 +8,10 @@ import SSRProvider from 'react-bootstrap/SSRProvider';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-    <SSRProvider>
+    <SSRProvider> 
       <div className={classes.home} id='homeDiv'>
         <TopBar />
-
-          <Component {...pageProps} /> 
-
+        <Component {...pageProps} /> 
         <FooterInfo />
       </div>
     </SSRProvider>

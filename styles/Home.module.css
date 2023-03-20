@@ -13,7 +13,7 @@
 
 .home{
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Luzhniki_Stadium%2C_2018_FIFA_World_Cup.jpg');
-  background-size: cover;
+  background-size: auto;
   font-family: 'Josefin Sans', sans-serif;
 }
 
