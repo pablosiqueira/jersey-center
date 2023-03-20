@@ -10,7 +10,6 @@ const SearchBar = (props) => {
     const router = useRouter()
 
     const getTermHandler = (event) => {
-        event.preventDefault()
         setSearchTerm(event.target.value)
     }
 
@@ -21,6 +20,7 @@ const SearchBar = (props) => {
     }
 
     const searchAction = () => {
+        event.preventDefault()
         if(props.mode === 'nav'){
            router.push('/'+ props.category + '?search=' + searchTerm)
         }else{
