@@ -17,12 +17,7 @@ const DetailsForm = props => {
     const [trophies,setTrophies] = useState(props.item.trophies.length > 0 ? props.item.trophies : [{text:'',url:''}])
     const [content,setContent] = useState(props.item.content.length > 0 ? props.item.content : [{text:'',type:'',desc:''}])
     const [references,setReferences] = useState(props.item.references.length > 0 ? props.item.references : [{text:'',url:''}])
-    
-    console.log('trophies')
-    console.log(trophies)
-    console.log('references')
-    console.log(references)
-    
+        
     // /dev/edit-jersey/details/63dbc6ac88a376ed4ec0eed0
 
     const deleteField = (field,id) => {
@@ -90,7 +85,7 @@ const DetailsForm = props => {
                 break;
             case 'references':
                 data = [...references]
-                let url = document.getElementById('url-' + index).value
+                let url = document.getElementById('referencesUrl-' + index).value
                 data[index] = {text: event.target.value, url}
                 setReferences(data)
                 break;
