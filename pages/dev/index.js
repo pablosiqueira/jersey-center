@@ -25,35 +25,35 @@ const DevPage = () => {
             <Window>
                 <h1 className="text-center my-2">Developer Area</h1>        
                 <div className={"d-flex text-center flex-wrap pt-3 justify-content-evenly" }>
-            <Link href='/dev/add'>
+            <Link href='/dev/add' legacyBehavior>
                 <a style={actionLink} variant="outline-secondary">
                 <IoShirtOutline size='5rem'/>
                     <p>Add Jersey</p> 
                 </a>
             </Link>
 
-            <Link href='/dev/edit/jerseys/'>
+            <Link href='/dev/edit/jerseys/' legacyBehavior>
               <a style={actionLink} variant="outline-secondary">
               <GiNewspaper size='5rem'/>
                 <p>Edit Jersey</p>
               </a>
             </Link>
 
-            <Link href='dev/edit/countries'>
+            <Link href='dev/edit/countries' legacyBehavior>
               <a style={actionLink} variant="outline-secondary">
               <HiOutlineGlobe size='5rem'/>
                 <p>Edit Country</p>
               </a>
             </Link>
 
-            <Link href='/dev/edit/brands'>
+            <Link href='/dev/edit/brands' legacyBehavior>
               <a style={actionLink} variant="outline-dark">
               <ImPencil2 size='5rem'/>
                 <p>Edit Brand</p>
               </a>
             </Link>
 
-            <Link href='/dev/edit/clubs'>
+            <Link href='/dev/edit/clubs' legacyBehavior>
               <a style={actionLink} variant="outline-dark">
               <GiSoccerKick size='5rem'/>
                 <p>Edit Team</p>

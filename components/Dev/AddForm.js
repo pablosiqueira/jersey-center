@@ -314,7 +314,7 @@ const AddForm = props => {
                 brandImg = getExtraField('brandSelect','image')
             }
 
-            const data = {
+            let data = {
                     club: {name: club.toLowerCase(), fullName: clubFull ,id: clubId, image: clubImg},
                     season,
                     order,

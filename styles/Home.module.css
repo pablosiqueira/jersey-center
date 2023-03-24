@@ -17,8 +17,6 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
-
 @media (min-width: 600px) {
   .home, .main{
     min-height: 100vh;

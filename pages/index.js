@@ -1,20 +1,10 @@
-import Head from 'next/head'
-import classes from '../styles/Home.module.css'
-import CardGrid from '../components/Cards/CardGrid'
 import { MongoClient } from 'mongodb'
-import ActionsList from '../components/List/ActionsList'
+import Home from '../components/Home/Home'
 
-const Home = (props) => {
+const HomePage = (props) => {
   return (
     <>
-      <Head>
-        <title>Jersey Database</title>
-        <link rel="icon" type="icon" sizes="16x16" href='/favicon.ico'></link>
-      </Head>
-      <div className={classes.homet + ' pt-4'}>
-          <CardGrid items={props.jerseys} category='jerseys' mode='home' jerseysSize={props.jerseysSize} countrySize={props.countrySize}/>
-        <ActionsList />
-      </div>
+      <Home jerseys={props.jerseys} jerseysSize={props.jerseysSize} countrySize={props.countrySize}/>
     </>
   )
 }
@@ -56,4 +46,4 @@ export async function getServerSideProps({params, query}){
 
 
 
-export default Home
+export default HomePage

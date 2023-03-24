@@ -1,4 +1,5 @@
 import classes from './DetailsPage.module.css'
+import Image from 'react-bootstrap/Image'
 
 const DetailsContent = props => {
     return (
@@ -6,7 +7,7 @@ const DetailsContent = props => {
             {props.content.map((item,index) => {
                 switch (item.type){
                     case 'image':
-                     return  <img key={index} alt={item.desc} className={classes.detailsImg + ' d-block mx-auto my-4'} src={item.text}/>
+                     return  <Image key={index} alt={item.desc} className={classes.detailsImg + ' d-block mx-auto my-4'} src={item.text}/>
                     case 'text':
                      return  <p key={index} className="my-4">{item.text}</p>
                     case 'video':

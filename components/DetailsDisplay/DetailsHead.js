@@ -1,5 +1,6 @@
 import classes from './DetailsPage.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const DetailsHead = props => {
     return(
@@ -14,7 +15,7 @@ const DetailsHead = props => {
                 </div>
                 {props.trophies.length > 0 && <div className={"d-flex flex-wrap my-2 justify-content-center " + classes.trophy}>
                     {props.trophies.map((item,index) => {
-                        return <img key={index} className={"m-1"} src={item.url} title={item.text}/>
+                        return <img key={index} className={"m-1"} src={item.url} title={item.text} alt={item.text}/>
                     })}         
                 </div>}
         </div>

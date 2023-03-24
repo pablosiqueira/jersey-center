@@ -3,6 +3,7 @@ import DetailsContent from "./DetailsContent"
 import DetailsReferences from "./DetailsReferences"
 import MiniCarousel from "./MiniCarousel"
 import classes from './DetailsPage.module.css'
+import Image from "next/image"
 
 const DetailsDisplay = props => {
     const checkNull = (array,category) => {
@@ -25,7 +26,7 @@ const DetailsDisplay = props => {
         </div>
         <div className={classes.detailsBlock + ' d-block mx-auto pb-5 px-2'}>
             {(props.mode === 'show' && checkNull(props.content)) && 
-                <img className={"d-block mx-auto " + classes.detailsImg} src={props.jersey.card} />
+                <img className={"d-block mx-auto " + classes.detailsImg} src={props.jersey.card} alt={props.jersey.name} layout='fill'/>
             }
             {!checkNull(props.content) && <DetailsContent content={props.content}/>}
             {!checkNull(props.references) && <DetailsReferences references={props.references}/>}

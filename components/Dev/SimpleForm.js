@@ -57,7 +57,7 @@ const SimpleForm = props => {
     async function submitForm(event) {
         event.preventDefault()
         setIsLoading(true)
-        const data = {
+        let data = {
             name: name.toLowerCase(),
             image: imageUrl,
             jerseys: props.item.jerseys

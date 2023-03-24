@@ -1,0 +1,30 @@
+.divTitle{
+    background-image: url('/room2.jpg');
+    text-shadow: 0 0 40px #000;
+    width: fit-content;
+    color: white;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .divTitle h1{
+    font-family: 'Anton', sans-serif;
+    font-size: xxx-large;
+  }
+
+.viewAllBtn{
+    background-color: #301014;
+    border: 3px solid #CCAD8F;
+    border-radius: 6px;
+    color: #CCAD8F;
+    font-size: large;
+    width: 100%;
+    max-width: 500px;
+}
+  
+  .viewAllBtn:hover{
+    background-color: #CCAD8F;
+    color: #301014;
+    border-color: #301014;
+  }

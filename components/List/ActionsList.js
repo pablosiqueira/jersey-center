@@ -10,32 +10,24 @@ const ActionsList = () => {
     return(
     <>
         <div className={"d-flex text-center flex-wrap pt-3 " + classes.actionsSection}>
-            <Link href='/clubs'>
-                <a className={classes.actionLink} variant="outline-secondary">
+            <Link href='/clubs' className={classes.actionLink} variant="outline-secondary">
                 <IoShieldHalfOutline size='5rem'/>
-                    <p>Clubs</p> 
-                </a>
+                <p>Clubs</p> 
             </Link>
 
-            <Link href='/brands'>
-              <a className={classes.actionLink} variant="outline-secondary">
+            <Link href='/brands' className={classes.actionLink} variant="outline-secondary">
               <MdOutlineSportsSoccer size='5rem'/>
-                <p>Brands</p>
-              </a>
+              <p>Brands</p>
             </Link>
 
-            <Link href='/countries'>
-              <a className={classes.actionLink} variant="outline-secondary">
+            <Link href='/countries' className={classes.actionLink} variant="outline-secondary">
               <GoGlobe size='5rem'/>
-                <p>Countries</p>
-              </a>
+              <p>Countries</p>
             </Link>
 
-            <Link href='/dev'>
-              <a className={classes.actionLink} variant="outline-dark">
+            <Link href='/dev' className={classes.actionLink} variant="outline-dark">
               <BsFillGearFill size='5rem'/>
-                <p>Developer Tools</p>
-              </a>
+              <p>Developer Tools</p>
             </Link>
 
       </div>
